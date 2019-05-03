@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  python:
+    build: docker/python
+    volumes:
+      - .:/workspace
+    command: /bin/sh -c "while sleep 1; do :; done"
